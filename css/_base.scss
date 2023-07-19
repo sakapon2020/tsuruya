@@ -1,0 +1,575 @@
+@charset "utf-8";
+$cBlack: #000;
+$cWhite: #fff;
+$cGreen: #00662b;
+$bGreen: #00652c;
+$bOrange: #eb8300;
+$cOrange: #cf3101;
+$cSkyblue: #099ddf;
+$cYellow: #fee019;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    height: 100%;
+    width: 100%;
+    background: #fefbdb;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    & p {
+        font-size: 16px;
+    }
+}
+p {
+    font-family: Meiryo, "Hiragino Kaku Gothic ProN", Sans-serif;
+    word-break: break-all;
+}
+li {
+    list-style: none;
+}
+a:visited {
+    text-decoration: none;
+}
+.btn01 {
+    width: 100%;
+    padding: 20px 0 20px 25px;
+    text-align: center;
+    background: $bOrange;
+    background-image: linear-gradient(to bottom, $bOrange, $cOrange);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #f8c27b inset;
+    color: #fff;
+    font-size: 16px;
+    border: solid 1px #943000;
+    text-decoration: none;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 20px;
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg);
+    }
+}
+.arw {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    &::before, &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 20px;
+        margin: auto;
+        vertical-align: middle;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+strong {
+    color: $cSkyblue;
+}
+#wrap {
+    margin: 0 auto;
+    text-align: center;
+}
+header {
+    margin: 20px auto 0;
+    text-align: center;
+}
+#mainBlock {
+    margin: 0 1.5%;
+    clear: both;
+    max-width: 1060px;
+}
+#mainImg {
+    margin: 0 0 15px;
+}
+#movieBox {
+    display: inline;
+    margin: 25px auto 30px;
+    max-width: 980px;
+    & div {
+        margin: 0 auto;
+        width: 95%;
+        padding: 1%;
+    }
+    & h3 {
+        font-size: 1.6em;
+        color: $cGreen;
+        text-align: center;
+    }
+    & video {
+        width: 100%;
+        background: #000;
+    }
+}
+.sp-img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pc_img {
+    display: none;
+}
+.dis_sp {
+    display: block;
+}
+.dis_pc {
+    display: none !important;
+}
+.lead {
+    margin: 0 4.5% 3%;
+    text-align: justify;
+}
+.btnBox {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    & li {
+        float: none;
+        margin: 0 10px 10px;
+    }
+}
+#himitsuBox {
+    display: inline-block;
+    margin: 80px auto 75px;
+    max-width: 980px;
+    & p {
+        padding: 0 3% 15px;
+        text-align: justify;
+        background: #fff;
+    }
+}
+#himitsu1 {
+    margin-bottom: 10px;
+}
+#himitsu2 {
+    margin-bottom: 10px;
+}
+.boxStyle01 {
+    margin: 0 0 50px;
+    max-width: 980px;
+    background: transparent url(../image/bg_boxStyle01.png);
+    background-color: #fff;
+    border: 4px solid #b5c9b0;
+    border-radius: 10px;
+    & .ico01 {
+        position: absolute;
+        top: -23px;
+        right: 1%;
+        width: 23.1%;
+    }
+    & .ico02 {
+        display: none;
+    }
+    & .ico03 {
+        position: absolute;
+        width: 16.2%;
+        top: 0;
+        right: 3%;
+
+    }
+}
+.psn {
+    position: relative;
+}
+.boxStyle02 {
+    margin: 30px 0 20px;
+    display: inline-block;
+    background-color: #dbe4d7;
+    border-radius: 10px;
+    padding: 2.2%;
+    & h5 {
+        font-size: 1.5rem;
+        color: $bGreen;
+    }
+    & .sec_right {
+        margin: 0 auto 10px;
+        width: 95%;
+    }
+}
+h3.ttl01 {
+    width: 72%;
+    margin: 3% 4% 2%;
+    text-align: left;
+}
+.ttl02 {
+    top: -10%;
+    position: absolute;
+    left: 2.2%;
+    text-align: left;
+}
+.ttl03 {
+    margin: 0 0 20px;
+    font-size: 1.7rem;
+    color: $bGreen;
+    text-align: center;
+    line-height: 1.4;
+}
+.box-ind {
+    margin: 0 4%;
+}
+.flexBox {
+    display: block;
+    & h5 {
+        font-size: 1.5em;
+        margin: 0 0 10px;
+        color: $bGreen;
+        text-align: justify;
+    }
+}
+#box1_left {
+    margin: 20px auto 0;
+    width: auto;
+    padding: 0 2% 0 0;
+}
+#box1_right {
+    margin: 20px auto 0;
+    width: auto;
+    padding: 0 2% 0 0;
+}
+#tsuchibuki {
+    margin: 20px 0;
+    text-align: justify;
+}
+.box2_1 {
+    margin: 0 auto;
+    width: 95%;
+}
+.sec_ind {
+    margin: 0 4%;
+    overflow: hidden;
+    width: auto;
+    max-width: 980px;
+    & p {
+        margin-bottom: 1rem;
+        text-align-last: left;
+    }
+}
+section.pr {
+    margin: 35px 4% !important;
+    width: auto;
+    overflow: hidden;
+    & p {
+        text-align: center;
+    }
+}
+.lineupBox {
+    display: inline;
+    margin: 30px 0 40px;
+    max-width: 980px;
+    & h3 {
+        margin-bottom: 20px;
+        background: $cYellow;
+        color: $bGreen;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+.try110 {
+    margin-top: 20px;
+    width: 100%;
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        & li {
+            margin: 0 1%;
+        }
+    }
+}
+.bousaiJ {
+    margin: 30px 0;
+    width: 100%;
+    & ul {
+        justify-content: center;
+        display: flex;
+        & li {
+            width: 33%;
+            margin: 0 1.5%;
+        }
+    }
+}
+.slider {
+    text-align: center;
+    margin-bottom: 40px;
+    & p {
+        font-size: 1rem;
+        color: $cGreen;
+        line-height: 1.2;
+    }
+}
+#pointBox {
+    margin-top: 0;
+    & .flexBox {
+        display: block;
+    }
+}
+.box_ind {
+    margin: 0 4%;
+}
+#kawaraPointBox {
+    padding: 20px 0 0;
+    width: 100%;
+    & ul {
+        display: flex;
+        flex-wrap: wrap;
+        & li {
+            margin: 0 2.3% 15px;
+            width: 45%;
+        }
+    }
+}
+#kawaraDetailBox {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    text-align: justify;
+    overflow: hidden;
+    width: 100%;
+    & h3 {
+        margin: 0 0 20px;
+    }
+    & .sec_right {
+        width: 20.3%;
+        margin-right: 4%;
+        float: left;
+    }
+    & p {
+        overflow: hidden;
+    }
+}
+
+#point1 {
+    margin-bottom: 10px;
+    margin: 0 2.5%;
+    max-width: 980px;
+    & h2 {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+#point2 {
+    margin-bottom: 10px;
+    margin: 0 2.5%;
+    max-width: 980px;
+    & h2 {   
+        text-align: left;    
+    }
+    & .flexBox {
+        display: block;
+        overflow: hidden;
+    }
+    & .tsuruyaKawara {
+        margin: 10px 0 0;
+        width: 100%;
+        & .point2_ul {
+            display: flex;
+            justify-content: space-between;
+            & li {
+                margin: 0 0 0 1.7%;
+            }
+        }
+    }
+    & .koremade {
+        margin: 20px 0 0 0 ;
+        width: 100%;
+        & h4 {
+            text-align: left;
+            margin-bottom: 0;
+        }
+        
+    }
+}
+#point3 {
+    margin-bottom: 25px;
+    margin: 0 2.5%;
+    max-width: 980px;
+    & h4 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        text-align: left;
+        color: $bGreen;
+        & br {
+            display: none;
+        }
+    }
+    & #point3_1 {
+        width: 100%;
+    }
+}
+#point4 {
+    margin: 0 2.5% 100px 2.5%;
+    max-width: 980px;
+    & h4 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        text-align: left;
+        color: $bGreen;
+        & br {
+            display: none;
+        }
+    }
+    & #point4_1 {
+        width: 100%;
+    }
+    & #point4_r {
+        margin: 15px 0 0;
+        & .point4_ul {
+            display: flex;
+            justify-content: space-between;
+            & li {
+                margin: 0 2.5%;
+            }
+        }
+    }
+}
+.flexBox1 {
+    border-bottom: 2px solid #c9c599;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &:last-child {
+        border-bottom: none;
+    }
+    & .koremade {
+        width: 48%;
+        text-align: justify;
+        
+        & h3 {
+            margin-bottom: 20px;
+            padding: 5px;
+            background: $bGreen;
+            color: $cWhite;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        & h4 {
+            font-size: 1.3rem;
+            line-height: 1.3;
+            text-align: center;
+            margin-bottom: 15px;
+            color: $bGreen;
+            height: 81px;
+        }
+    }
+    & .tsuruyaKawara {
+        width: 48%;
+        text-align: justify;
+        & h3 {
+            margin-bottom: 20px;
+            padding: 5px;
+            background: $cYellow;
+            color: $bGreen;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        & h4 {
+            font-size: 1.3rem;
+            line-height: 1.3;
+            text-align: center;
+            margin-bottom: 15px;
+            color: $bGreen;
+            height: 81px;
+            & span {
+                color: $cSkyblue;
+            }
+        }
+    }
+}
+sup {
+    vertical-align: top;
+    font-size: 1rem;
+}
+.col02 {
+    color: $bGreen;
+    padding-bottom: 30px;
+}
+#imgCha {
+    position: absolute;
+    right: 0;
+    top: -56px;
+    width: 22.8%;
+    bottom: -3.5%;
+}
+#hukkouKawaraBox {
+    width: 100%;
+    margin-bottom: 35px;
+    text-align: left;
+    & ul {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        & li {
+            margin: 0 1%;
+            padding: 1%;
+        }
+        & P {
+            margin: 0 1%;
+        }
+    }
+}
+.flex {
+    display: block;
+    margin: 35px 5%;
+}
+#pr2 {
+    margin: 40px 4% 0 4%;
+    position: relative;
+    overflow: hidden;
+    max-width: 980px;
+    text-align: left;
+}
+.prBox_l {
+    width: 52%;
+    float: left;
+    padding-left: 5%;
+    padding-top: 40px;
+}
+.prBox_r {
+    right: 20px;
+    width: 40%;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    float: right;
+}
+footer {
+    margin-top: 80px;
+    clear: both;
+    padding: 15px 0;
+    background: $bGreen;
+    color: $cWhite;
+    text-align: center;
+}
+#pageTop {
+    display: block;
+    margin: -56px auto 10px;
+    width: 102px;
+    height: 72px;
+    & a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: transparent url(../image/pageTop.png) no-repeat 0 0;
+        text-indent: -9999px;
+        &:link {
+            text-decoration: none;
+            color: #00F;
+        }
+    }
+
+}

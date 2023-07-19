@@ -1,0 +1,50 @@
+@charset "utf-8";
+.flexBox {
+    & #box1_left {
+        margin-bottom: 20px;
+    }
+    & #box1_right {
+        margin-bottom: 20px;
+    }
+    & h4 {
+        text-align: left;
+        width: fit-content;
+    
+    }
+    & h5 {
+        font-size: 1.8rem;
+        margin: 0 0 10px;
+        color: $bGreen;
+        text-align: justify;
+    }
+}
+.flexBox1 {
+    border-bottom: 2px solid #c9c599;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &:last-child {
+        border-bottom: none;
+    }
+    & .koremade {
+        & h4 {
+            font-size: 1.8rem;
+            line-height: 1.2;
+            height: 100px;
+        }
+    }
+    & .tsuruyaKawara {
+        & h4 {
+            font-size: 1.8rem;
+            line-height: 1.2;
+            height: 100px;
+        }
+    }
+}
+#point1 p, #point2 p, #point3 p, #point4 p {
+    font-size: 1.3rem;
+}
